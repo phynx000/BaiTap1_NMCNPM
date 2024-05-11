@@ -1,0 +1,239 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.promotions-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.promotion {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -5px;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid transparent;
+}
+
+.promotion:hover {
+  border-color: #006A31;
+}
+
+.promotion .name {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.promotion .name a {
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+
+.promotion .name a:hover {
+  color: #006A31;
+}
+
+.promotion .des {
+  max-height: 75px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.promotion .des p {
+  color: #8c8c8c;
+}
+
+.promotion .view-more {
+  margin-top: 5px;
+}
+
+.promotion .view-more .promotion-btn {
+  color: #006A31;
+  padding: 10px;
+  border: 1px solid #006A31;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+  margin: 0px 5px;
+}
+
+.promotion .view-more .promotion-btn:hover {
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.product .pd-state {
+  top: 0;
+  right: 0;
+}
+
+.product .pd-state .selling,
+.product .pd-state .limit {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  align-items: center;
+}
+
+.product .pd-state .selling i,
+.product .pd-state .limit i {
+  font-size: 14px;
+}
+
+.product .pd-state .selling i {
+  margin-left: 5px;
+  color: #ff0000;
+  transition: 0.3s ease-in-out;
+}
+
+.product .pd-state .selling:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.product .pd-state .selling:hover i {
+  color: #fff;
+}
+
+.product .pd-state .limit i {
+  margin-left: 5px;
+  color: #803d1b;
+  transition: 0.3s ease-in-out;
+}
+
+.product .pd-state .limit:hover {
+  background-color: #803d1b;
+  color: #fff;
+}
+
+.product .pd-state .limit:hover i {
+  color: #fff;
+}
+
+.product .pd-image img {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.product .pd-image img:hover {
+  rotate: 15deg;
+}
+
+.product .pd-title {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.product .pd-title:hover {
+  -webkit-text-decoration: underline #006A31;
+  text-decoration: underline #006A31;
+  transition: 0.3s all ease-in-out;
+}
+
+.product:hover .pd-title p {
+  transition: 0.3s all ease-in-out;
+  color: #006A31;
+}
+
+.product .pd-des {
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.product .pd-price p {
+  font-size: 13px;
+}
+
+.product .pd-price span {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.product .btn-buy {
+  padding: 8px;
+  color: #006A31;
+  border: 1px solid #006A31;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.product .btn-buy p {
+  margin-right: 5px;
+}
+
+.product .btn-buy:hover {
+  color: #fff;
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.promotions-pd .swiper-button-prev::after,
+.promotions-pd .swiper-button-next::after {
+  z-index: 1;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  color: lightgray;
+  transition: 0.3s all ease-in-out;
+}
+
+.promotions-pd .swiper-button-prev:hover::after,
+.promotions-pd .swiper-button-next:hover::after {
+  background-color: #006A31;
+  color: #fff;
+  border: 1px solid #006A31;
+}
